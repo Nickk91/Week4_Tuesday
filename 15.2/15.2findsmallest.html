@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findSmallest(a, b, c) {
+        if (a > b > c) {
+          return c;
+        } else if (a > c > b) {
+          return a;
+        } else {
+          return b;
+        }
+      }
+      findSmallest(52, 66, 2);
+
+      //         Front-end development: Debugging
+      // JavaScript – get sum
+      // The following exercise contains the following subjects:
+      // ● find smallest
+      // Instructions
+      // # Note: We ask you not to solve the bug by finding it with
+      // your eyes but to use the debugging tools we've learned!
+      // What is wrong with this code?
+      // 1. First, find the line that contains the problem. Write it down.
+      // The problematic line is 20 findSmalest is not defined. typo in the function call
+      //
+      // 2. Which debug method did you use to find the bug?
+      // I used the dev tools in the chrom browser
+      // 3. Explain the bug in your own words.
+      // There was a typo in function call.
+      // You can't execute the function if you call the wrong name.
+      // 4. Fix the code and submit it all.
+    </script>
+  </body>
+</html>

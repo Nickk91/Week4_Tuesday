@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getSum(arr1, arr2) {
+        let sum = 0;
+        for (let i = 0; i < arr1.length; i++) {
+          sum += arr1[i];
+        }
+        for (let i = 0; i < arr2.length; i++) {
+          sum += arr2[i];
+        }
+        console.log(sum);
+      }
+      getSum([1, 2, 3], [(5, 66, 23)]);
+      //1 The first bug i found was in the first loop function.
+      // i found the bug using the console. It said it can't add-up arr1
+      // i looked at getSum and saw that the isn't a comma between arr1 and arr2.
+      // the next problem I found was using the dev tools ion chrome, about a const variable.
+      // I saw that the sum variable is const when it should be let in order to be updated in the loop
+    </script>
+  </body>
+</html>
